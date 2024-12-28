@@ -1,0 +1,40 @@
+# Ignorar logs
+logs/
+*.log
+
+# Ignorar cachés y compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignorar dependencias de Python
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+.virtualenv/
+*.whl
+Pipfile.lock
+poetry.lock
+
+# Ignorar dependencias de Node.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Ignorar archivos temporales y binarios
+*.bak
+*.swp
+*.tmp
+
+# Ignorar configuraciones locales
+*.env
+
+# Ignorar configuraciones específicas del sistema operativo
+.DS_Store
+Thumbs.db
