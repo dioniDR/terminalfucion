@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  body {
+    @apply m-0 flex min-h-screen min-w-[320px] place-items-center bg-[#242424] dark:bg-white;
+  }
+
+  h1 {
+    @apply text-[3.2em] leading-[1.1];
+  }
+
+  button {
+    @apply rounded-lg border border-transparent bg-[#1a1a1a] p-[0.6em_1.2em] text-base font-medium 
+           transition-[border-color] duration-[0.25s] hover:border-[#646cff] dark:bg-[#f9f9f9];
+  }
+
+  button:focus,
+  button:focus-visible {
+    @apply outline-[4px_auto_-webkit-focus-ring-color];
+  }
+
+  a {
+    @apply font-medium text-[#646cff] no-underline hover:text-[#535bf2] dark:hover:text-[#747bff];
+  }
+}
